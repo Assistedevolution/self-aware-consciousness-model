@@ -1,0 +1,4 @@
+A key weakness in current deep-ML is the ability to create large scale hierarchical graphs with long range context.
+The desired system should support heterogeneous edge types and compositionality. The latter as it is difficult to see how one could store large numbers of such graphs without compositionality.
+
+This project uses a tensor storage approach to codify complex graphs.
