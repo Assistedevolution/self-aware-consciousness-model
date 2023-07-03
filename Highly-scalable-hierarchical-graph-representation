@@ -1,4 +1,12 @@
 A key weakness in current deep-ML is the ability to create large scale hierarchical graphs with long range context.
 The desired system should support heterogeneous edge types and compositionality. The latter as it is difficult to see how one could store large numbers of such graphs without compositionality.
 
-This project uses a tensor storage approach to codify complex graphs.
+This project uses a tensor storage approach to codify complexes (like graphs of graphs but decomposable).
+
+A hypothetsis for how this is done in the brain is that the hippocampal complex (HC+LEC+MEC) spatially encodes simplices which can be associated with complexes. 
+When a simplex is formed related simplexes can be retrieved and pulled into the Hippocampus for alignment to the new simplex. 
+Alignment is achieved by minimising energy between the simplices. 
+Once alignment is achieved, at minimum energy, the alignment pattern of the new simplex (maybe the specific adjacency matrix)is added to the network (attention weights?)...like a modern hopfield networks?
+An aliged simplex now gives access to the wider complex ( to which it was aligned) allowing long range context based relationsips to be created.
+Thus what is stored, in an associative way, are things, their related simplices? 
+(do we need abstract simplices or just ability to recall a spatial pattern of things which then recalls similar items in the associative memory)
